@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog | SUTD</title>
+    <link rel="icon" href="/src/logo.JPG" type="image/x-icon">
+
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            overflow: auto;
+            padding-top: 80px; /* Adjust for header height */
+        }
+
+        body::-webkit-scrollbar {
+            display: none; /* Hides the scrollbar in WebKit browsers */
+        }
+
+        header {
+            background-color: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        a{color:black;}
+        a:hover{color:darkgoldenrod;text-decoration: none;}
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav a {
+            position: relative;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        .nav a:hover::before {
+            width: 100%;
+        }
+
+        .nav a:hover {
+            color: #555;
+
+        }
+
+        .nav a.active {
+            color: black;
+        }
+
+        .nava.active::before {
+            width: 100%;
+        }
+
+        /* Mobile Navigation Styles */
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color:black;
+        }
+
+        .nav-links a {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+        a{color:black;}
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            header {
+                justify-content: space-between;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: white;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 1rem;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .nav-links a {
+                text-align: center;
+                padding: 1rem;
+                width: 100%;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links.active {
+                display: flex;
+                color:black;
+            }
+            img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin-bottom: 0.5rem;
+            }
+            a{color:black;}
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Catalog | SUTD</a>
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">HOME</a>
+            <a href="Final Catlog/catlog.pdf" download>DOWNLOAD</a>
+        </div>
+    </header>
+
+    <div>
+        <img src="Final Catlog/1.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/2.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/3.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/5.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/6.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/7.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/8.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/9.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/10.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/11.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/12.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/13.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/14.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/15.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/16.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/17.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/18.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/19.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/20.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/21.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/22.png" width="600" height="650"/><br><br>
+        <img src="Final Catlog/23.png" width="600" height="650"/><br><br>
+
+    </div>
+
+    <script>
+        // JavaScript to toggle the mobile navigation menu
+        function toggleNav() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>     
+</html>
